@@ -29,6 +29,7 @@ nav {
 }
 .jumbotron {
   background-image: url("/images/deadlift.jpg");
+  margin-bottom: 0;
 }
 .fa-navicon, .fas-bars {
   color: yellow;
@@ -37,4 +38,43 @@ nav {
 .navbar-toggler-icon {
   background-image: url("/images/menu.svg");
   stroke: rgba(255, 255, 0, 0);
+}
+header ul {
+  list-style-type: none;
+  font-size: 3em;
+}
+@media (max-width: 600px){
+  header ul {
+    font-size: 2em;
+  }
+}
+.urself {
+  font-family: "Homemade Apple";
+}
+.off-bg {
+  background-color: #8b898c;
+  overflow: auto;
+}
+#benefits {
+  list-style-type: "#";
+  font-size: 2em;
+}
+#benefits li {
+  margin-bottom: 15px;
+  font-style: italic;
+  font-weight: 900;
+}
+.break-img {
+  background-image: url(/images/squat.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.welcome {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 900;
+}
+.para {
+  text-align: center;
 }
