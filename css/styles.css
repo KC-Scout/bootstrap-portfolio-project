@@ -63,7 +63,6 @@ header ul {
 }
 .off-bg {
   background-color: #8b898c;
-  overflow: auto;
 }
 #benefits {
   list-style-type: "#";
@@ -112,4 +111,33 @@ a,
 }
 header p {
   font-size: 3em;
+}.card {
+  background-color: grey;
+}
+.card-header {
+  font-size: 2em;
+}
+.prices {
+  font-size: 1.5em;
+}
+.enrollment {
+  font-size: 0.5em;
+}
+.ylw-mem {
+  font-size: 2.5em;
+}
+.mem-ben {
+  font-weight: 900;
+}
+.benies {
+  columns: 2;
+  -moz-columns: 2;
+  -webkit-columns: 2;
+}
+.states:hover {
+  filter: blur(1px);
+  color: #ffffff
+}
+.state-bdy {
+  background-color: lightgray
 }
