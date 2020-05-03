@@ -110,3 +110,6 @@ a,
     height: 100px;
   }
 }
+header p {
+  font-size: 3em;
+}
