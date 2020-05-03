@@ -31,7 +31,8 @@ nav {
   background-image: url("/images/deadlift.jpg");
   margin-bottom: 0;
 }
-.fa-navicon, .fas-bars {
+.fa-navicon,
+.fas-bars {
   color: yellow;
   font-size: 50px;
 }
@@ -43,9 +44,18 @@ header ul {
   list-style-type: none;
   font-size: 3em;
 }
-@media (max-width: 600px){
+@media (max-width: 768px) {
   header ul {
     font-size: 2em;
+  }
+  #img-trainer {
+    display: inline;
+    visibility: hidden;
+  }
+}
+@media (max-width: 550px) {
+  header ul {
+    font-size: 1em;
   }
 }
 .urself {
@@ -77,4 +87,26 @@ header ul {
 }
 .para {
   text-align: center;
+}
+.site-footer,
+.site-footer ul,
+a,
+.btn-link {
+  color: #ffffff;
+}
+.site-footer {
+  background-color: #56595d;
+}
+.site-footer h5 {
+  font-size: 2em;
+  color: #ffffff;
+}
+.site-footer a:hover {
+  filter: blur(1px);
+  color: #ffffff
+}
+@media (max-width: 760px) {
+  #logo-man{
+    height: 100px;
+  }
 }
