@@ -102,16 +102,17 @@ a,
 }
 .site-footer a:hover {
   filter: blur(1px);
-  color: #ffffff
+  color: #ffffff;
 }
 @media (max-width: 760px) {
-  #logo-man{
+  #logo-man {
     height: 100px;
   }
 }
 header p {
   font-size: 3em;
-}.card {
+}
+.card {
   background-color: grey;
 }
 .card-header {
@@ -136,11 +137,17 @@ header p {
 }
 .states:hover {
   filter: blur(1px);
-  color: #ffffff
+  color: #ffffff;
 }
 .state-bdy {
-  background-color: lightgray
+  background-color: lightgray;
 }
 .card-img-top {
   max-height: 178px;
+}
+
+@media (max-width: 768px) {
+  .hidden-on-mobile {
+    display: none;
+  }
 }
