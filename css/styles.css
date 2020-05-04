@@ -141,3 +141,6 @@ header p {
 .state-bdy {
   background-color: lightgray
 }
+.card-img-top {
+  max-height: 178px;
+}
