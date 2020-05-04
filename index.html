@@ -18,6 +18,26 @@
 </head>
 
 <body>
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Get in contact with us!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                <p>form goes here</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-d">
         <a id="brand" class="navbar-brand" href="#">_the_foundry</a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
@@ -115,7 +135,7 @@
                 <div class="col-2 col-sm-2 text-center">
                     <ul class="list-unstyled">
                         <li><a href="aboutus.html">About</a></li>
-                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="#contactModal" role="button" data-toggle="modal">Contact Us</a></li>
                         <li><a href="findagym.html">Locations</a></li>
                         <li><a href="careers.html">Careers</a></li>
                     </ul>
@@ -132,10 +152,10 @@
                             class="fa fa-youtube"></i></a>
                 </div>
                 <div class="col-sm-2 text-center">
-                    <a role="button" class="btn btn-link" href="tel:+12065551234"><i
-                            class="fa fa-phone"></i>1-206-555-1234</a><br>
-                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i
-                            class="fa fa-envelope-o"></i>campsites@nucamp.co</a>
+                    <ul class="list-unstyled">
+                        <li><a href="aboutus.html">Manage Account</a></li>
+                        <li><a href="contactus.html">News</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
