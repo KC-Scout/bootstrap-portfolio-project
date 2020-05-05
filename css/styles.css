@@ -175,3 +175,6 @@ header p {
 .t-classes {
   font-size:2em;
 }
+.card-columns {
+  column-count: 2;
+}
