@@ -18,8 +18,8 @@
 </head>
 
 <body>
-    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -29,11 +29,47 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                <p>form goes here</p>
+                    <form name="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">Name</label>
+                            <input type="text" class="form-control" id="contactName" placeholder="Your name...">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email address</label>
+                            <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactFeedback">Questions? Comments? Concerns?</label>
+                            <textarea class="form-control" id="contactFeedback" rows="3"></textarea>
+                        </div>
+                        <button class="btn btn-warning">Submit</button>
+                    </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signInModalTitle">Manage Your Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form name="signIn">
+                        <div class="form-group">
+                            <label for="signInEmail">Email</label>
+                            <input type="email" class="form-control" placeholder="Your e-mail...">
+                        </div>
+                        <div class="form-group">
+                            <label for="signInPass">Password</label>
+                            <input type="password" class="form-control" placeholder="Password....">
+                        </div>
+                        <button type="submit" class="btn btn-warning">Sign-In</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -135,7 +171,8 @@
                 <div class="col-2 col-sm-2 text-center">
                     <ul class="list-unstyled">
                         <li><a href="aboutus.html">About</a></li>
-                        <li><a href="#contactModal" role="button" data-toggle="modal">Contact Us</a></li>
+                        <li><a href="#contactModal" role="button" data-toggle="modal"
+                                data-target="#contactModal">Contact Us</a></li>
                         <li><a href="findagym.html">Locations</a></li>
                         <li><a href="careers.html">Careers</a></li>
                     </ul>
@@ -153,8 +190,8 @@
                 </div>
                 <div class="col-sm-2 text-center">
                     <ul class="list-unstyled">
-                        <li><a href="aboutus.html">Manage Account</a></li>
-                        <li><a href="contactus.html">News</a></li>
+                        <li><a role="button" data-toggle="modal" data-target="#signInModal">Manage Account</a></li>
+                        <li><a href="news.html">News</a></li>
                     </ul>
                 </div>
             </div>
