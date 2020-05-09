@@ -155,11 +155,17 @@ header p {
   color: black;
 }
 .modal-header {
-  background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(157,190,111,1) 41%, rgba(188,189,90,1) 65%, rgba(253,187,45,1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(157, 190, 111, 1) 41%,
+    rgba(188, 189, 90, 1) 65%,
+    rgba(253, 187, 45, 1) 100%
+  );
   color: black;
 }
 .modal-title {
-  margin: 0  auto 0 6em;
+  margin: 0 auto 0 6em;
 }
 #classesCarousel {
   margin-left: auto;
@@ -173,7 +179,7 @@ header p {
   font-size: 4em;
 }
 .t-classes {
-  font-size:2em;
+  font-size: 2em;
 }
 .card-columns {
   column-count: 2;
@@ -186,7 +192,10 @@ header p {
 }
 .img-container {
   position: relative;
-  display: inline-block;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   /* border: 2px solid red; */
 }
 .prod-price {
@@ -201,15 +210,23 @@ header p {
 }
 .prd-container {
   border: 3px solid purple;
-  display: inline-block;
+  display: block;
+}
+.img-container img {
+  width: 100%;
+  height: auto;
 }
 .prod-info {
   color: black;
 }
 .prod-row {
-  border: 3px solid orange;
   margin-bottom: 10px;
 }
 .carousel {
   margin-bottom: 10px;
+}
+.prod-title {
+  font-size: 1.25em;
+  font-weight: 600;
+  font-style: italic;
 }
